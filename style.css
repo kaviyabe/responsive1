@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1,.box2,.box3{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+}
+a{
+    background-color: blueviolet;
+    color: white;
+    padding: 2rem;
+    margin: 10px;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover{
+    background-color: white;
+    color: blueviolet;
+}
+.box1,.box3{
+    background-color: white;
+}
+.box2{
+    background-color: blueviolet;
+}
+.main{
+    display: flex;
+    flex-direction: column column column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/bg-bottom.svg') ;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    
+}
+
+
+.box2 a{
+    background-color: white;
+    color: blueviolet;
+}
+.toggle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 3rem;
+    margin: 20px;
+}
+.button{
+    width: 50px;
+    height: 25px;
+    background-color:grey;
+    border-radius: 200px;
+    position: relative;
+}
+.button::before{
+    
+    
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 2px;
+}
+#check:checked + .button{
+background-color: blue;
+}
